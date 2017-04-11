@@ -176,4 +176,4 @@
 (global-set-key (kbd "s-W") 'delete-frame)
 (global-set-key (kbd "s-n") 'make-frame)
 (global-set-key (kbd "s-z") 'undo-tree-undo)
-(global-set-key (kbd "s-Z") 'undo-tree-redo)
+;; (global-set-key (kbd "s-Z") 'undo-tree-redo)
