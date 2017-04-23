@@ -94,7 +94,8 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(chinese-fonts-setup
+   dotspacemacs-additional-packages '(
+                                      ;; chinese-fonts-setup
                                       sicp)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -393,11 +394,10 @@ values."
                 :weight 'normal
                 :slant 'normal
                 :size 13.5)))
-  ;; (use-package chinese-fonts-setup)
 
   ;; use ipython for python shell. dreamslink
-  (setq python-shell-interpreter "/home/dl-85/anaconda3/bin/ipython")
-  (setq python-shell-interpreter-args "-i --simple-prompt --pylab")
+  (setq python-shell-interpreter (substitute-in-file-name "$HOME/anaconda3/bin/ipython"))
+  (setq python-shell-interpreter-args "-i --simple-prompt")
 
   (fset 'evil-visual-update-x-selection 'ignore)
 
