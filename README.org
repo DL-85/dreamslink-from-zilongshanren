@@ -9,3 +9,5 @@ Hacking journey begins start from 2013.
 5. The =Swiper= package sometimes frozen the Emacs UI only when you split the window. You could use `pkill -SIGUSR2 -i emacs` command line to rescue.
 
 ** Happing Hacking
+
+** Modified by dreamslink
