@@ -387,7 +387,8 @@ values."
   ;;               :size 13.5)))
 
   ;; use ipython for python shell. dreamslink
-  (setq python-shell-interpreter (substitute-in-file-name "$HOME/anaconda3/bin/ipython"))
+  ;; (setq python-shell-interpreter (substitute-in-file-name "$HOME/anaconda3/bin/ipython"))
+  (setq python-shell-interpreter (substitute-in-file-name "/usr/bin/ipython"))
   (setq python-shell-interpreter-args "-i --simple-prompt")
 
   (fset 'evil-visual-update-x-selection 'ignore)
