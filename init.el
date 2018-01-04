@@ -109,13 +109,13 @@ values."
                     org-bullets smooth-scrolling org-repo-todo org-download org-timer
                     livid-mode git-gutter git-gutter-fringe 
                     leuven-theme gh-md evil-lisp-state spray lorem-ipsum
-                    ac-ispell ace-jump-mode auto-complete auto-dictionary
+                    ac-ispell ace-jump-mode auto-dictionary
                     clang-format define-word google-translate disaster epic
                     fancy-battery org-present orgit orglue spacemacs-theme
                     helm-flyspell flyspell-correct-helm clean-aindent-mode
                     helm-c-yasnippet ace-jump-helm-line helm-make magithub
                     helm-themes helm-swoop helm-spacemacs-help smeargle
-                    ido-vertical-mode flx-ido company-quickhelp counsel-projectile
+                    ido-vertical-mode flx-ido counsel-projectile
                     window-purpose ivy-purpose helm-purpose spacemacs-purpose-popwin
                     )
    dotspacemacs-install-packages 'used-only
@@ -390,7 +390,10 @@ values."
   ;; use ipython for python shell. dreamslink
   ;; (setq python-shell-interpreter (substitute-in-file-name "$HOME/anaconda3/bin/ipython"))
   (setq python-shell-interpreter (substitute-in-file-name "/usr/bin/ipython"))
-  (setq python-shell-interpreter-args "-i --simple-prompt")
+  ;; (setq python-shell-interpreter-args "-i --simple-prompt")
+
+  ;; org mode export subscript settings x_{y} means subscript
+  (setq org-export-with-sub-superscripts (quote {}))
 
   (fset 'evil-visual-update-x-selection 'ignore)
 
